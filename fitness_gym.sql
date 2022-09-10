@@ -43,34 +43,34 @@ INSERT INTO `fitness_class` VALUES
 UNLOCK TABLES;
 
 --
--- Table structure for table `fitness_employee`
+-- Table structure for table `fitness_employees`
 --
 
-DROP TABLE IF EXISTS `fitness_employee`;
+DROP TABLE IF EXISTS `fitness_employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `fitness_employee` (
+CREATE TABLE `fitness_employees` (
   `first_name` varchar(50) COLLATE utf8mb4_bin DEFAULT NULL,
   `last_name` varchar(50) COLLATE utf8mb4_bin DEFAULT NULL,
   `position` varchar(20) COLLATE utf8mb4_bin DEFAULT NULL,
-  `start_date` date DEFAULT NULL,
+  `join_date` date DEFAULT NULL,
   `salary` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `fitness_employee`
+-- Dumping data for table `fitness_employees`
 --
 
-LOCK TABLES `fitness_employee` WRITE;
-/*!40000 ALTER TABLE `fitness_employee` DISABLE KEYS */;
-INSERT INTO `fitness_employee` VALUES
-('satinder','singh','team','2020-02-02',10000),
-('simranpreet','grewal','team','2020-02-02',10000),
-('simranpreet','grewal','team','2020-02-02',10000),
-('simranpreet','grewal','team','2020-02-02',10000),
-('simranpreet','grewal','team','2020-02-02',10000);
-/*!40000 ALTER TABLE `fitness_employee` ENABLE KEYS */;
+LOCK TABLES `fitness_employees` WRITE;
+/*!40000 ALTER TABLE `fitness_employees` DISABLE KEYS */;
+INSERT INTO `fitness_employees` VALUES
+('satinder','singh','team','2020-02-02',5000),
+('simranpreet','grewal','manager','2022-02-02',9000),
+('nuhaar','sandhu','manager','2021-02-05',9000),
+('nitnem','grewal','supervisor','2021-02-02',7000),
+('amriner','dhaliwal','team','2020-02-04',5000);
+/*!40000 ALTER TABLE `fitness_employees` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -121,4 +121,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-09 21:40:18
+-- Dump completed on 2022-09-09 21:54:50
